@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Datos de transferencia</title>
 <link rel="icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14/assets/svg/1f4b3.svg" type="image/svg+xml">
+<title>Datos de transferencia</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -194,7 +194,7 @@ fields.forEach(f => {
   div.innerHTML = `
     <div class="field-info">
       <div class="field-label">${f.label}</div>
-      <div class="field-value">${f.value}</div>
+      <div class="field-value"><span x-apple-data-detectors="false" style="color:#f0f0f0;text-decoration:none;">${f.value}</span></div>
     </div>
     <button class="copy-btn" onclick="copyField(this, '${f.value.replace(/'/g,"\\'")}')">
       ${iconCopy} Copiar
